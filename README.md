@@ -1,1 +1,0 @@
-# Sandeepani-Independent-PU-College-Hosadurga.com
