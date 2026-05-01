@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandeepani PU College Hosadurga | PCMB & PCMC College</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  position:fixed;
+  width:100%;
+  z-index:100;
+  transition:0.3s;
+}
+
+nav.scrolled{
+  background:#0a1f44;
+}
+
+.logo{
+  color:white;
+  font-size:20px;
+  font-weight:600;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin-left:30px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:#f4b400;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,60,0.7), rgba(0,0,60,0.7)),
+    url('https://images.unsplash.com/photo-1562774053-701939374585');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  padding:0 80px;
+  color:white;
+}
+
+.content{
+  max-width:600px;
+  animation:fadeIn 2s ease;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+.main-title{
+  font-size:70px;
+  color:#f4b400;
+  font-weight:800;
+}
+
+.sub-title{
+  font-size:28px;
+  margin-top:10px;
+}
+
+.tagline{
+  margin-top:20px;
+  color:#ddd;
+}
+
+.btn{
+  margin-top:25px;
+  padding:14px 30px;
+  background:#f4b400;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.btn:hover{
+  background:#ffcc00;
+}
+
+/* SECTION COMMON */
+section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.cards{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.card{
+  width:280px;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+  background:white;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* FORM */
+.form-section{
+  background:#f5f5f5;
+}
+
+form{
+  max-width:400px;
+  margin:auto;
+}
+
+input, select{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+  background:#0a1f44;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="logo">Sandeepani PU College</div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#faculty">Faculty</a></li>
+    <li><a href="#facilities">Facilities</a></li>
+    <li><a href="#form">Admissions</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="content">
+    <h1 class="main-title">SANDEEPANI</h1>
+    <h2 class="sub-title">INDEPENDENT PU COLLEGE</h2>
+    <p class="tagline">Where Engineers Innovate & Doctors Heal</p>
+    <button class="btn">Apply Now</button>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <h2>Our Courses</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>PCMB</h3>
+      <p>Physics, Chemistry, Mathematics, Biology</p>
+    </div>
+
+    <div class="card">
+      <h3>PCMC</h3>
+      <p>Physics, Chemistry, Mathematics, Computer Science</p>
+    </div>
+  </div>
+</section>
+
+<section id="faculty">
+  <h2>Our Faculty</h2>
+
+  <div class="cards">
+
+    
+    <div class="card">
+      <h3>Mr. Nagaraj</h3>
+      <p>Pricipal</p>
+      <p>15+ years experience </p>
+    </div>
+
+    <div class="card">
+      <h3>Miss. Preethi</h3>
+      <p><strong>Subject:</strong> Physics</p>
+      <p>2+ years experience in PU & NEET coaching</p>
+    </div>
+
+    <div class="card">
+      <h3>Mr. Vinay R</h3>
+      <p><strong>Subject:</strong> Chemistry</p>
+      <p>Expert in NEET & practical lab training</p>
+      <p>10+ years experience in PU & NEET coaching</p>
+    </div>
+
+    <div class="card">
+      <h3>Mr. Gagan S</h3>
+      <p><strong>Subject:</strong> Mathematics</p>
+      <p>Specialist in JEE & problem solving techniques</p>
+      <p>5+ years experience in PU & JEE coaching</p>
+    </div>
+
+    <div class="card">
+      <h3>Mr. Shivanna T</h3>
+      <p><strong>Subject:</strong> Biology</p>
+      <p>NEET-focused teaching with concept clarity</p>
+      <p>7+ years experience in PU & NEET coaching</p>
+
+    </div>
+
+    <div class="card">
+      <h3>Miss. Revathi H C</h3>
+      <p><strong>Subject:</strong> Computer Science</p>
+      <p>Programming, coding & project-based learning</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section id="facilities" style="background:#f5f5f5;">
+  <h2>Our Facilities</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Smart Classrooms</h3>
+      <p>Digital learning environment.</p>
+    </div>
+
+    <div class="card">
+      <h3>Laboratories</h3>
+      <p>Advanced science labs.</p>
+    </div>
+
+    <div class="card">
+      <h3>Library</h3>
+      <p>Wide academic resources.</p>
+    </div>
+
+    <div class="card">
+      <h3>Hostel</h3>
+      <p>Safe & comfortable stay.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ADMISSION FORM -->
+<section class="form-section" id="form">
+  <h2>Admission Form</h2>
+
+  <form id="admissionForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email" required>
+
+    <select required>
+      <option value="">Select Course</option>
+      <option>PCMB</option>
+      <option>PCMC</option>
+    </select>
+
+    <button class="btn">Submit</button>
+  </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <p><strong>Address:</strong> Sandeepani School, Madhure Dibba, Hosadurga, Chitradurga</p>
+  <p><strong>Phone:</strong> +91 8431175273</p>
+  <p><strong>College code:</strong> GG0435</p>
+  <p><strong>Email:</strong> sandeepanihsd@gmail.com</p>
+</section>
+
+<!-- MAP -->
+<section>
+  <h2>Find Us on Map</h2>
+
+  <iframe 
+    src="https://maps.google.com/maps?q=Sandeepani%20School%20Madhure%20Dibba%20Hosadurga&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="100%" 
+    height="400" 
+    style="border:0;" 
+    loading="lazy">
+  </iframe>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Sandeepani PU College</p>
+</footer>
+
+<!-- JS -->
+<script>
+
+// Navbar scroll effect
+window.addEventListener("scroll", () => {
+  let nav = document.getElementById("navbar");
+  if(window.scrollY > 50){
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
+
+// Form submit
+document.getElementById("admissionForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("Form submitted successfully!");
+});
+    
+</script>
+
+</body>
+</html>
+<meta name="google-site-verification" content="qaWCzslvwdU8UOZXIvxs7sBtS5BqkVChJL7Z01_BUXQ" />
